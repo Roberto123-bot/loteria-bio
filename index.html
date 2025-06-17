@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluna Book</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Loterias</li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Lotinha</a>
+                </li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Supe 6</a>
+                </li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Super 5</a>
+                </li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Duplo 6</a>
+                </li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Dia de Alegria</a>
+                </li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Mania de Jogo</a>
+                </li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">O Milionário</a>
+                </li>
+
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Quina Fácil</a>
+                </li>
+            </ul>
+            <!-- <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem"> -->
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Loteria </b>Alternativa</h1>
+        </div>
+
+        <!-- <ul class="opcoes">
+            <li class="opcoes__item">Categoria</li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Meu jogos</a></li>
+        </ul> -->
+
+        <!-- <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div> -->
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Roberto Consultor</h2>
+        <p class="banner__texto">Encontre sua modalidade de jogo preferida!</p>
+        <button class="contato__botao"><a href="https://superjogo.loteriabr.com/admin/indicate/2819" class="contato__link">Quero participar</a></button>
+        <!-- <input type="search" class="banner__pesquisa" placeholder="Digite a tabela e jogue."> -->
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Nossas Tabelas</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/DIA DE ALEGRIA.png" alt="Tabela DI"></div>
+                    <div class="swiper-slide"><img src="img/DUPLO 6.png" alt="Tabela DS"></div>
+                    <div class="swiper-slide"><img src="img/LOTINHA.png" alt="Tabela LF"></div>
+                    <div class="swiper-slide"><img src="img/MANIA DE JOGO.png" alt="Tabela LM"></div>
+                    <div class="swiper-slide"><img src="img/MANIA DE TIME.png" alt="Tabela MT"></div>
+                    <div class="swiper-slide"><img src="img/O MILIONÁRIO.png" alt="Tabela MM"></div>
+                    <div class="swiper-slide"><img src="img/QUINA FÁCIL.png" alt="Tabela QF"></div>
+                    <div class="swiper-slide"><img src="img/SUPER 5.png" alt="Tabela S5"></div>
+                    <div class="swiper-slide"><img src="img/SUPER 6.png" alt="Tabela S6"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1° linha -->
+                <div class="card__descricao">
+                    <!-- 1° coluna -->
+                    <div>
+                        <img src="img/Estrelinhas.png" alt="estrela__imagem">
+                        <h3 class="descricao__titulo">É a sua hora!</h3>
+                        <h2 class="descricao__titulo__livro">MARQUE MAIS,</h2>
+                        <p class="descricao__texto">Clique aqui e ganhe mais!</p>
+                    </div>
+                    <!--2° coluna-->
+                    <img src="img/CHANCES.png" alt="chances__imagem">
+                </div>
+
+                <!-- 2° linha -->
+                <div class="card__botoes">
+                    <!-- 1° coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
+                    </ul>
+                    <!-- 2° coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Lotinha</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Super 6</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Super 5</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Mania de jogo</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Dia de Alegria</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades</h2>
+            <p class="contato__texto">Participe do meu grupo vip com dicas e palpites grátis.</p>
+        </div>
+        <!-- <input type="zap" placeholder="Fale comigo no whatsapp" class="contato__zap"> -->
+        <!-- <button class="contato__botao">Quero participar</button> -->
+    </section>
+
+    <hr/>
+
+    <footer class="rodape">
+        <ul class="lista-rodape">
+            <li class="lista-rodape__item">
+                <img src="img/1.svg" alt="linkedin">
+                <a href="#" class="lista-rodape__link"></a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/2.svg" alt="youyube">
+                <a href="#" class="lista-rodape__link"></a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/3.svg" alt="facebook">
+                <a href="#" class="lista-rodape__link"></a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/4.svg" alt="whatsapp">
+                <a href="#" class="lista-rodape__link"></a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="img/5.svg" alt="instagram">
+                <a href="#" class="lista-rodape__link"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <SCRipt>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </SCRipt>
+
+</body>
+
+</html>

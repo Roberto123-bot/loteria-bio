@@ -1,0 +1,99 @@
+.contato {
+    background-color: var(--branco);
+    padding: 2em;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contato__titulo, 
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.contato__botao::placeholder {
+    background-position: left center;
+    background-size: 1em;
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/whatsapp3.svg") no-repeat;
+    padding-left: 2em;
+}
+
+.contato__zap {
+    padding: 1em 1em 1em 3em; /* espaço à esquerda para o ícone */
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 100%;
+    max-width: 400px;
+    color: var(--laranja);
+    background: url("../img/whatsapp3.svg") no-repeat 1em center;
+    background-size: 1.2em; /* ajuste o tamanho do ícone */
+    box-sizing: border-box;
+}
+
+
+.contato__botao {
+    margin-top: 1em;
+    padding: 0.8em 2em;
+    background: var(--laranja);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.contato__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contato__botao:hover {
+    opacity: 0.9;
+}
+
+/* código omitido */
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__descrição {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__zap {
+        width: 30%;
+    }
+}

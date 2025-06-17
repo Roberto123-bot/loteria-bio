@@ -1,0 +1,34 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center; /* centraliza os ícones */
+    gap: 1em; /* espaçamento entre eles */
+    margin-top: 1em;
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista-rodape {
+    display: flex;
+    flex-direction: row;       /* ← mudar de column para row */
+    justify-content: center;   /* centraliza horizontalmente */
+    gap: 1em;                  /* espaçamento entre os ícones */
+    padding: 1em 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+    }
+
+}
